@@ -8,5 +8,6 @@ public class CarApp {
         var car = new Avanza();
         car.drive();
         System.out.println("Roda : "+car.getTier());
+        System.out.println("Brand : "+car.getBrand());
     }
 }
