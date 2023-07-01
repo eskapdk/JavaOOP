@@ -13,4 +13,14 @@ public class Product {
     public String toString() {
         return "Nama Produk : "+name+", Harga : "+ price;
     }
+
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Product product = (Product) obj;
+
+        if (price != product.price) return false;
+        return name != null ? name.equals(product.name) : product.name == null;
+    }
 }
