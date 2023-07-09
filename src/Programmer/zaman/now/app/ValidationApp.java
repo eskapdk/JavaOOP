@@ -37,5 +37,8 @@ public class ValidationApp {
             System.out.println("Error gak error tetap dieksekusi");
         }
 
+
+        LoginRequest loginRequest4 = new LoginRequest(null, null);
+        ValidationUtil.validateRuntime(loginRequest4);
     }
 }
